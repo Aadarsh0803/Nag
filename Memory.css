@@ -1,0 +1,125 @@
+#page2 {
+    background: linear-gradient(to bottom, #ffb6c1, #ff69b4);
+    padding: 50px 20px;
+    text-align: center;
+    height: 100vh;
+    overflow-y: auto;
+}
+.gallery-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+.gallery {
+    display: flex;
+    gap: 15px;
+}
+.image-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    scroll-snap-align: start;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+.image-container:hover img {
+    transform: scale(1.1);
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.image-container:hover .overlay {
+    opacity: 1;
+}
+video {
+    width: 60%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+.image-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+.image-container:hover video {
+    transform: scale(1.1);
+}
+
+.gallery-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+    white-space: nowrap; /* Ensures items don't wrap to the next line */
+}
+
+.gallery {
+    display: flex;
+    gap: 15px;
+}
+
+.image-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    scroll-snap-align: start;
+    flex-shrink: 0; /* Prevents shrinking in flex layout */
+}
+
+.image-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.image-container:hover video {
+    transform: scale(1.1);
+}
+
+h2 {
+    font-family: 'Pacifico', cursive; /* A stylish handwritten font */
+    font-size: 36px;
+    color:black; /* White text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif; /* Modern, clean font */
+    font-size: 18px;
+    color: black; /* White text */
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto;
+}

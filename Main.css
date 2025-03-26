@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000; /* Black background to blend with video */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* White text for readability */
+}
+
+/* Page Layout */
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1; /* Ensures content is above the video */
+}
+
+/* Background Video */
+.bg-video {
+    position: fixed; /* Keep video fixed as the background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Places video behind other content */
+    filter: brightness(50%); /* Darkens video slightly for better text contrast */
+}
+
+/* Birthday Image */
+.birthday-image {
+    width: 30%;
+    margin-top: 120px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3); Soft glow effect */
+}
+
+/* Wish Box (Text Container) */
+.wish-box {
+    background: rgba(255, 255, 255, 0.1); /* Subtle transparent white */
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    backdrop-filter: blur(10px); /* Adds a soft blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* Button Styling */
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .birthday-image {
+        width: 50%;
+    }
+    .wish-box {
+        width: 80%;
+    }
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+/* Wish Box Text */
+.wish-box h1 {
+        font-family: 'Great Vibes', cursive;  
+ 
+    /* A stylish cursive font */
+    font-size: 48px;
+    color: #ffccff; /* Soft pastel pink for elegance */
+    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.3);
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+button {
+    font-family: 'Montserrat', sans-serif; /* Clean and modern font */
+    background: linear-gradient(to right, #ff1493, #ff69b4); /* Gradient pink */
+    border: none;
+    padding: 14px 28px;
+    color: white;
+    font-size: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
+    font-weight: 600;
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff69b4, #ff1493);
+    transform: scale(1.1);
+}
